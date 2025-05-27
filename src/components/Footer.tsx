@@ -8,10 +8,10 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {/* Brand */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Alex Johnson</h3>
+            <h3 className="text-xl font-bold mb-4">Aditya Sri Inukonda</h3>
             <p className="text-gray-400 leading-relaxed">
-              Full-Stack Developer passionate about creating innovative solutions 
-              and building scalable applications.
+              Software Developer passionate about creating innovative solutions 
+              and building scalable applications. Recent CS graduate ready to make an impact.
             </p>
           </div>
 
@@ -38,18 +38,18 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Get In Touch</h4>
             <div className="space-y-2 text-gray-400">
-              <p>alex.johnson@email.com</p>
-              <p>+1 (555) 123-4567</p>
-              <p>San Francisco, CA</p>
+              <p>adityasriinukonda@gmail.com</p>
+              <p>571-733-1404</p>
+              <p>Fairfax, VA</p>
             </div>
             <div className="flex space-x-4 mt-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://github.com/adityasri" className="text-gray-400 hover:text-white transition-colors">
                 <Github className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://linkedin.com/in/aditya-sri-inukonda" className="text-gray-400 hover:text-white transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="mailto:adityasriinukonda@gmail.com" className="text-gray-400 hover:text-white transition-colors">
                 <Mail className="h-5 w-5" />
               </a>
             </div>
@@ -58,7 +58,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400 flex items-center justify-center gap-2">
-            Made with <Heart className="h-4 w-4 text-red-500" /> by Alex Johnson © 2024
+            Made with <Heart className="h-4 w-4 text-red-500" /> by Aditya Sri Inukonda © 2024
           </p>
         </div>
       </div>

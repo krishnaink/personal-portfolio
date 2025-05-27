@@ -8,19 +8,20 @@ const Hero = () => {
       <div className="max-w-4xl mx-auto text-center">
         <div className="animate-fade-in">
           <img
-            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face"
+            src="/lovable-uploads/cbe67b38-e099-4d92-ba73-355746fc8f70.png"
             alt="Profile"
-            className="w-32 h-32 rounded-full mx-auto mb-8 border-4 border-white shadow-lg"
+            className="w-32 h-32 rounded-full mx-auto mb-8 border-4 border-white shadow-lg object-cover"
           />
           <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-4">
-            Alex <span className="text-blue-600">Johnson</span>
+            Aditya Sri <span className="text-blue-600">Inukonda</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-8">
-            Full-Stack Developer & CS Graduate
+            Software Developer & Computer Science Graduate
           </p>
           <p className="text-lg text-gray-500 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Passionate about creating innovative solutions and building scalable applications. 
-            Recently graduated with a Computer Science degree and ready to make an impact in tech.
+            Recent George Mason University graduate with experience in full-stack development, 
+            machine learning, and building scalable applications. Passionate about creating innovative 
+            solutions and optimizing user experiences.
           </p>
           
           <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -35,13 +36,13 @@ const Hero = () => {
           </div>
           
           <div className="flex justify-center space-x-6">
-            <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors duration-300">
+            <a href="https://github.com/adityasri" className="text-gray-600 hover:text-blue-600 transition-colors duration-300">
               <Github className="h-8 w-8" />
             </a>
-            <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors duration-300">
+            <a href="https://linkedin.com/in/aditya-sri-inukonda" className="text-gray-600 hover:text-blue-600 transition-colors duration-300">
               <Linkedin className="h-8 w-8" />
             </a>
-            <a href="#" className="text-gray-600 hover:text-blue-600 transition-colors duration-300">
+            <a href="mailto:adityasriinukonda@gmail.com" className="text-gray-600 hover:text-blue-600 transition-colors duration-300">
               <Mail className="h-8 w-8" />
             </a>
           </div>

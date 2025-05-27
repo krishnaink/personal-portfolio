@@ -6,23 +6,23 @@ const About = () => {
   const highlights = [
     {
       icon: Code,
-      title: "Clean Code",
-      description: "Writing maintainable, efficient, and well-documented code"
+      title: "Full-Stack Development",
+      description: "Experienced in React, Node.js, and modern web technologies"
     },
     {
       icon: Lightbulb,
-      title: "Problem Solving",
-      description: "Analytical thinking and creative solutions to complex challenges"
+      title: "Machine Learning",
+      description: "Applied ML techniques for credit risk assessment and data analysis"
     },
     {
       icon: Users,
-      title: "Team Player",
-      description: "Collaborative approach with excellent communication skills"
+      title: "Leadership",
+      description: "Teaching assistant with experience mentoring students"
     },
     {
       icon: Zap,
-      title: "Quick Learner",
-      description: "Adaptable to new technologies and frameworks"
+      title: "Problem Solver",
+      description: "Strong analytical skills with focus on optimization and efficiency"
     }
   ];
 
@@ -32,8 +32,9 @@ const About = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">About Me</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            I'm a recent Computer Science graduate with a passion for building innovative software solutions 
-            and a strong foundation in both frontend and backend development.
+            Computer Science graduate from George Mason University with a 3.51/4.0 GPA. 
+            Passionate about building innovative software solutions and leveraging technology 
+            to solve real-world problems.
           </p>
         </div>
         
@@ -41,14 +42,16 @@ const About = () => {
           <div>
             <h3 className="text-2xl font-semibold text-gray-900 mb-6">My Journey</h3>
             <p className="text-gray-600 mb-4 leading-relaxed">
-              During my Computer Science studies, I developed a strong foundation in algorithms, data structures, 
-              and software engineering principles. I've worked on various projects ranging from web applications 
-              to machine learning models, always focusing on creating user-centered solutions.
+              As a recent graduate from George Mason University, I've developed expertise in 
+              full-stack development, machine learning, and software engineering. My experience 
+              spans from founding a personal startup focused on food delivery optimization to 
+              working as a software engineer intern at major financial institutions.
             </p>
             <p className="text-gray-600 leading-relaxed">
-              I'm particularly interested in full-stack development, cloud technologies, and the intersection 
-              of AI and web development. I believe in continuous learning and staying up-to-date with the 
-              latest industry trends and best practices.
+              I'm particularly passionate about creating efficient, user-centered solutions 
+              and have experience in everything from real-time data visualization to mobile 
+              app development. I thrive in collaborative environments and enjoy teaching 
+              and mentoring others.
             </p>
           </div>
           
@@ -69,9 +72,9 @@ const About = () => {
           <h3 className="text-2xl font-semibold text-gray-900 mb-6 text-center">Technical Skills</h3>
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <h4 className="font-semibold text-gray-900 mb-3">Frontend</h4>
+              <h4 className="font-semibold text-gray-900 mb-3">Languages</h4>
               <div className="flex flex-wrap gap-2">
-                {['React', 'TypeScript', 'Tailwind CSS', 'Next.js', 'Vue.js'].map((skill) => (
+                {['Java', 'Python', 'C/C++', 'JavaScript', 'HTML/CSS', 'SQL'].map((skill) => (
                   <span key={skill} className="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm">
                     {skill}
                   </span>
@@ -79,9 +82,9 @@ const About = () => {
               </div>
             </div>
             <div>
-              <h4 className="font-semibold text-gray-900 mb-3">Backend</h4>
+              <h4 className="font-semibold text-gray-900 mb-3">Frameworks & Tools</h4>
               <div className="flex flex-wrap gap-2">
-                {['Node.js', 'Python', 'Java', 'PostgreSQL', 'MongoDB'].map((skill) => (
+                {['React', 'Node.js', 'PostgreSQL', 'Firebase', 'Git', 'MongoDB'].map((skill) => (
                   <span key={skill} className="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm">
                     {skill}
                   </span>
@@ -89,9 +92,9 @@ const About = () => {
               </div>
             </div>
             <div>
-              <h4 className="font-semibold text-gray-900 mb-3">Tools & Others</h4>
+              <h4 className="font-semibold text-gray-900 mb-3">Concepts & Others</h4>
               <div className="flex flex-wrap gap-2">
-                {['Git', 'Docker', 'AWS', 'Linux', 'Figma'].map((skill) => (
+                {['Machine Learning', 'Data Structures', 'Algorithms', 'REST APIs', 'Agile'].map((skill) => (
                   <span key={skill} className="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm">
                     {skill}
                   </span>

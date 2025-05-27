@@ -5,57 +5,65 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 const Experience = () => {
   const experiences = [
     {
-      company: "TechStart Inc.",
-      position: "Software Development Intern",
-      duration: "Jun 2023 - Aug 2023",
-      location: "San Francisco, CA",
+      company: "Personal Startup",
+      position: "Founder/Software Developer",
+      duration: "Jan 2025 - Present",
+      location: "Aldie, VA",
       description: [
-        "Developed and maintained React components for the company's main web application",
-        "Collaborated with senior developers to implement new features and fix bugs",
-        "Participated in code reviews and learned best practices for clean, maintainable code",
-        "Improved application performance by 15% through code optimization"
+        "Developing a food delivery platform tailored for niche Indian restaurants to reduce reliance on third-party services",
+        "Integrated a cost-effective delivery system by partnering with local drivers and implementing an optimized route-planning algorithm",
+        "Conducting market research and customer validation by interviewing restaurant owners to understand pain points",
+        "Building a full-stack web and mobile app using React Native, Node.js, and PostgreSQL"
       ],
-      technologies: ["React", "JavaScript", "Node.js", "Git"]
+      technologies: ["React Native", "Node.js", "PostgreSQL", "Route Optimization"]
     },
     {
-      company: "University Research Lab",
-      position: "Research Assistant",
-      duration: "Jan 2023 - May 2023",
-      location: "University Campus",
-      description: [
-        "Assisted in machine learning research project focused on natural language processing",
-        "Implemented data preprocessing pipelines and model evaluation scripts",
-        "Co-authored research paper on sentiment analysis algorithms",
-        "Presented findings at undergraduate research symposium"
-      ],
-      technologies: ["Python", "TensorFlow", "Pandas", "Jupyter"]
-    },
-    {
-      company: "Local Business Solutions",
-      position: "Freelance Web Developer",
-      duration: "Sep 2022 - Dec 2022",
+      company: "Citi Bank",
+      position: "Software Engineer Intern",
+      duration: "Summer 2024",
       location: "Remote",
       description: [
-        "Built responsive websites for small businesses using modern web technologies",
-        "Managed client relationships and project timelines independently",
-        "Implemented SEO best practices and improved site loading speeds",
-        "Delivered 5 successful projects with 100% client satisfaction"
+        "Engineered a real-time stock monitoring system using JavaFX, Gradle, and Yahoo API to store 3,600+ Dow Jones prices per hour, displaying live updates every 5 seconds with a line graph (17.2k updates/day)",
+        "Improved Citi's stock analysis capability by creating UML and data flow diagrams, researching machine learning models for credit risk assessment, and building a Java-based real-time risk visualization tool"
       ],
-      technologies: ["HTML/CSS", "JavaScript", "WordPress", "SEO"]
+      technologies: ["Java", "JavaFX", "Gradle", "Yahoo API", "UML", "Machine Learning"]
+    },
+    {
+      company: "Wells Fargo",
+      position: "Software Engineer Intern",
+      duration: "April 2024 - May 2024",
+      location: "Remote",
+      description: [
+        "Drafted a detailed and accurate visual representation of the data as an entity relationship diagram (ERD)",
+        "Used the IntelliJ developer application to implement the ERD structure efficiently and published it to GitHub",
+        "Understood and analyzed relevant technical requirements for building a system to manage customer portfolios"
+      ],
+      technologies: ["IntelliJ", "ERD Design", "GitHub", "System Architecture"]
+    },
+    {
+      company: "George Mason University - College of Engineering",
+      position: "Teaching Assistant",
+      duration: "Fall 2023 - Spring 2024",
+      location: "Fairfax, VA",
+      description: [
+        "Led weekly lab sessions and provided support to help students debug and improve programming assignments",
+        "Instructed Java and Python to over 2,100 undergraduate students across 5 semesters, emphasizing code readability"
+      ],
+      technologies: ["Java", "Python", "Teaching", "Debugging"]
     }
   ];
 
   const education = [
     {
       degree: "Bachelor of Science in Computer Science",
-      school: "State University",
+      school: "George Mason University",
       duration: "2020 - 2024",
-      location: "City, State",
+      location: "Fairfax, VA",
       details: [
-        "Graduated Magna Cum Laude with GPA: 3.8/4.0",
+        "GPA: 3.51/4.0",
         "Relevant Coursework: Data Structures, Algorithms, Software Engineering, Database Systems, Machine Learning",
-        "Dean's List: Fall 2022, Spring 2023, Fall 2023",
-        "Senior Capstone: E-commerce Platform with AI-powered Recommendations"
+        "Focus on full-stack development and software engineering principles",
+        "Active participant in computer science community and technical projects"
       ]
     }
   ];
@@ -66,7 +74,7 @@ const Experience = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Experience & Education</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            My professional journey and academic background that shaped my development skills.
+            My professional journey from internships at major financial institutions to founding my own startup.
           </p>
         </div>
 

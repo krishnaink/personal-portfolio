@@ -1,3 +1,4 @@
+
 import { ExternalLink, Github } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -6,55 +7,55 @@ import { Badge } from '@/components/ui/badge';
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Full-stack e-commerce application with user authentication, payment processing, and admin dashboard. Built with React, Node.js, and PostgreSQL.",
+      title: "Mini PhotoBooth App",
+      description: "Developed a full-featured photo booth application that allows users to take, customize, and download pictures. Built with interactive UI and smooth user experience.",
+      image: "https://images.unsplash.com/photo-1551021794-03be4ddaf67d?w=500&h=300&fit=crop",
+      technologies: ["JavaScript", "HTML/CSS", "Git", "Firebase", "Netlify"],
+      github: "#",
+      demo: "#",
+      featured: true
+    },
+    {
+      title: "Rewards Program System",
+      description: "Implemented a comprehensive customer rewards program with REST API integration. Utilized PostgreSQL for secure data storage and created user authentication system.",
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "JWT"],
+      technologies: ["Java", "PostgreSQL", "Springboot", "Splunk", "JMeter"],
       github: "#",
       demo: "#",
       featured: true
     },
     {
-      title: "Task Management App",
-      description: "Collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop",
-      technologies: ["Vue.js", "Firebase", "Socket.io", "Tailwind CSS"],
-      github: "#",
-      demo: "#",
-      featured: true
-    },
-    {
-      title: "Weather Forecast App",
-      description: "Mobile-responsive weather application with location-based forecasts, interactive maps, and weather alerts.",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=500&h=300&fit=crop",
-      technologies: ["React", "OpenWeather API", "Chart.js", "PWA"],
+      title: "Netflix Movie Recommender AI",
+      description: "Processed 500+ films from TMDB database using cosine similarity to recommend movies based on features like genre, title, and cast. Created intelligent recommendation engine.",
+      image: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=500&h=300&fit=crop",
+      technologies: ["Python", "Kaggle", "NumPy", "Streamlit"],
       github: "#",
       demo: "#",
       featured: false
     },
     {
-      title: "Machine Learning Model",
-      description: "Image classification model using deep learning to identify objects in images with 95% accuracy.",
-      image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=500&h=300&fit=crop",
-      technologies: ["Python", "TensorFlow", "OpenCV", "Flask"],
+      title: "Real-time Stock Monitor",
+      description: "Built during Citi internship - real-time stock monitoring system that tracks 3,600+ Dow Jones prices per hour with live updates every 5 seconds.",
+      image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=500&h=300&fit=crop",
+      technologies: ["Java", "JavaFX", "Gradle", "Yahoo API"],
       github: "#",
       demo: "#",
       featured: false
     },
     {
-      title: "Social Media Dashboard",
-      description: "Analytics dashboard for social media management with data visualization and automated reporting.",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop",
-      technologies: ["Next.js", "D3.js", "MongoDB", "Express"],
+      title: "Food Delivery Platform",
+      description: "Currently developing a specialized food delivery platform for Indian restaurants with optimized route planning and local driver integration.",
+      image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=500&h=300&fit=crop",
+      technologies: ["React Native", "Node.js", "PostgreSQL", "Route Optimization"],
       github: "#",
       demo: "#",
       featured: false
     },
     {
-      title: "Chat Application",
-      description: "Real-time chat application with rooms, file sharing, and emoji reactions using WebSocket technology.",
-      image: "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=500&h=300&fit=crop",
-      technologies: ["React", "Socket.io", "Node.js", "Redis"],
+      title: "Credit Risk Assessment Tool",
+      description: "Machine learning-based tool for credit risk assessment with real-time data visualization, built during Wells Fargo internship with comprehensive ERD design.",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop",
+      technologies: ["Java", "Machine Learning", "ERD", "IntelliJ"],
       github: "#",
       demo: "#",
       featured: false
@@ -70,7 +71,8 @@ const Projects = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Here are some of my recent projects that showcase my skills and experience in full-stack development.
+            A showcase of my technical projects ranging from full-stack applications to machine learning solutions 
+            and real-time data systems.
           </p>
         </div>
 
