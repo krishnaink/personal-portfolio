@@ -1,9 +1,9 @@
 
-import { Github, Linkedin, Mail, Heart } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-12">
+    <footer className="bg-black text-white py-12">
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid md:grid-cols-3 gap-8">
           {/* Brand */}
@@ -54,12 +54,6 @@ const Footer = () => {
               </a>
             </div>
           </div>
-        </div>
-
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center">
-          <p className="text-gray-400 flex items-center justify-center gap-2">
-            Made with <Heart className="h-4 w-4 text-red-500" /> by Krishna Inukonda © 2024
-          </p>
         </div>
       </div>
     </footer>
