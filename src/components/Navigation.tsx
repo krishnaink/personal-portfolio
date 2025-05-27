@@ -29,7 +29,7 @@ const Navigation = () => {
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex justify-between items-center h-16">
           <a href="#" className="text-xl font-bold text-gray-900">
-            Alex Johnson
+            Aditya Sri Inukonda
           </a>
 
           {/* Desktop Navigation */}
@@ -38,12 +38,12 @@ const Navigation = () => {
               <a
                 key={item.href}
                 href={item.href}
-                className="text-gray-600 hover:text-blue-600 transition-colors duration-300"
+                className="text-gray-600 hover:text-pink-600 transition-colors duration-300"
               >
                 {item.label}
               </a>
             ))}
-            <Button className="bg-blue-600 hover:bg-blue-700 text-white">
+            <Button className="bg-pink-600 hover:bg-pink-700 text-white">
               Resume
             </Button>
           </div>
@@ -69,14 +69,14 @@ const Navigation = () => {
                 <a
                   key={item.href}
                   href={item.href}
-                  className="block px-3 py-2 text-gray-600 hover:text-blue-600 transition-colors duration-300"
+                  className="block px-3 py-2 text-gray-600 hover:text-pink-600 transition-colors duration-300"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.label}
                 </a>
               ))}
               <div className="px-3 py-2">
-                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">
+                <Button className="w-full bg-pink-600 hover:bg-pink-700 text-white">
                   Resume
                 </Button>
               </div>

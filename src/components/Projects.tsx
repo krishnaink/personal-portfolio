@@ -66,7 +66,7 @@ const Projects = () => {
   const otherProjects = projects.filter(project => !project.featured);
 
   return (
-    <section id="projects" className="py-20 bg-gray-50">
+    <section id="projects" className="py-20 bg-gradient-to-br from-purple-50 to-pink-50">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
@@ -79,7 +79,7 @@ const Projects = () => {
         {/* Featured Projects */}
         <div className="grid md:grid-cols-2 gap-8 mb-16">
           {featuredProjects.map((project, index) => (
-            <Card key={index} className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <Card key={index} className="overflow-hidden hover:shadow-xl transition-shadow duration-300 border-pink-200">
               <div className="relative group">
                 <img 
                   src={project.image} 
@@ -95,19 +95,19 @@ const Projects = () => {
                 <p className="text-gray-600 mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tech) => (
-                    <Badge key={tech} variant="secondary" className="text-xs">
+                    <Badge key={tech} variant="secondary" className="text-xs bg-pink-100 text-pink-800 border-pink-200">
                       {tech}
                     </Badge>
                   ))}
                 </div>
                 <div className="flex gap-3">
-                  <Button variant="outline" size="sm" asChild>
+                  <Button variant="outline" size="sm" asChild className="border-pink-600 text-pink-600 hover:bg-pink-600 hover:text-white">
                     <a href={project.github} className="flex items-center gap-2">
                       <Github className="h-4 w-4" />
                       Code
                     </a>
                   </Button>
-                  <Button size="sm" asChild>
+                  <Button size="sm" asChild className="bg-pink-600 hover:bg-pink-700">
                     <a href={project.demo} className="flex items-center gap-2">
                       <ExternalLink className="h-4 w-4" />
                       Demo
@@ -124,7 +124,7 @@ const Projects = () => {
           <h3 className="text-2xl font-semibold text-gray-900 mb-8 text-center">Other Projects</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {otherProjects.map((project, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
+              <Card key={index} className="hover:shadow-lg transition-shadow duration-300 border-pink-200">
                 <div className="relative group">
                   <img 
                     src={project.image} 
@@ -139,18 +139,18 @@ const Projects = () => {
                   <p className="text-gray-600 text-sm mb-3">{project.description}</p>
                   <div className="flex flex-wrap gap-1 mb-3">
                     {project.technologies.slice(0, 3).map((tech) => (
-                      <Badge key={tech} variant="secondary" className="text-xs">
+                      <Badge key={tech} variant="secondary" className="text-xs bg-pink-100 text-pink-800 border-pink-200">
                         {tech}
                       </Badge>
                     ))}
                   </div>
                   <div className="flex gap-2">
-                    <Button variant="outline" size="sm" asChild>
+                    <Button variant="outline" size="sm" asChild className="border-pink-600 text-pink-600 hover:bg-pink-600 hover:text-white">
                       <a href={project.github}>
                         <Github className="h-3 w-3" />
                       </a>
                     </Button>
-                    <Button size="sm" asChild>
+                    <Button size="sm" asChild className="bg-pink-600 hover:bg-pink-700">
                       <a href={project.demo}>
                         <ExternalLink className="h-3 w-3" />
                       </a>

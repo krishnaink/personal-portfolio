@@ -27,7 +27,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-20 bg-gradient-to-br from-pink-50 to-purple-50">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">About Me</h2>
@@ -57,9 +57,9 @@ const About = () => {
           
           <div className="grid grid-cols-2 gap-6">
             {highlights.map((highlight, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
+              <Card key={index} className="hover:shadow-lg transition-shadow duration-300 border-pink-200">
                 <CardContent className="p-6 text-center">
-                  <highlight.icon className="h-12 w-12 text-blue-600 mx-auto mb-4" />
+                  <highlight.icon className="h-12 w-12 text-pink-600 mx-auto mb-4" />
                   <h4 className="font-semibold text-gray-900 mb-2">{highlight.title}</h4>
                   <p className="text-sm text-gray-600">{highlight.description}</p>
                 </CardContent>
@@ -68,14 +68,14 @@ const About = () => {
           </div>
         </div>
         
-        <div className="bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-8">
+        <div className="bg-gradient-to-r from-pink-100 to-purple-100 rounded-2xl p-8">
           <h3 className="text-2xl font-semibold text-gray-900 mb-6 text-center">Technical Skills</h3>
           <div className="grid md:grid-cols-3 gap-8">
             <div>
               <h4 className="font-semibold text-gray-900 mb-3">Languages</h4>
               <div className="flex flex-wrap gap-2">
                 {['Java', 'Python', 'C/C++', 'JavaScript', 'HTML/CSS', 'SQL'].map((skill) => (
-                  <span key={skill} className="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm">
+                  <span key={skill} className="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm border border-pink-200">
                     {skill}
                   </span>
                 ))}
@@ -85,7 +85,7 @@ const About = () => {
               <h4 className="font-semibold text-gray-900 mb-3">Frameworks & Tools</h4>
               <div className="flex flex-wrap gap-2">
                 {['React', 'Node.js', 'PostgreSQL', 'Firebase', 'Git', 'MongoDB'].map((skill) => (
-                  <span key={skill} className="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm">
+                  <span key={skill} className="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm border border-pink-200">
                     {skill}
                   </span>
                 ))}
@@ -95,7 +95,7 @@ const About = () => {
               <h4 className="font-semibold text-gray-900 mb-3">Concepts & Others</h4>
               <div className="flex flex-wrap gap-2">
                 {['Machine Learning', 'Data Structures', 'Algorithms', 'REST APIs', 'Agile'].map((skill) => (
-                  <span key={skill} className="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm">
+                  <span key={skill} className="bg-white px-3 py-1 rounded-full text-sm text-gray-700 shadow-sm border border-pink-200">
                     {skill}
                   </span>
                 ))}
