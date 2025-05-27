@@ -28,7 +28,7 @@ const Navigation = () => {
     }`}>
       <div className="max-w-6xl mx-auto px-6">
         <div className="flex justify-between items-center h-16">
-          <a href="#" className="text-xl font-bold text-gray-900">
+          <a href="#" className="text-xl font-bold text-gray-800">
             Aditya Sri Inukonda
           </a>
 
@@ -38,12 +38,12 @@ const Navigation = () => {
               <a
                 key={item.href}
                 href={item.href}
-                className="text-gray-600 hover:text-pink-600 transition-colors duration-300"
+                className="text-gray-600 hover:text-pink-400 transition-colors duration-300"
               >
                 {item.label}
               </a>
             ))}
-            <Button className="bg-pink-600 hover:bg-pink-700 text-white">
+            <Button className="bg-pink-400 hover:bg-pink-500 text-white rounded-full">
               Resume
             </Button>
           </div>
@@ -54,9 +54,9 @@ const Navigation = () => {
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? (
-              <X className="h-6 w-6 text-gray-900" />
+              <X className="h-6 w-6 text-gray-800" />
             ) : (
-              <Menu className="h-6 w-6 text-gray-900" />
+              <Menu className="h-6 w-6 text-gray-800" />
             )}
           </button>
         </div>
@@ -69,14 +69,14 @@ const Navigation = () => {
                 <a
                   key={item.href}
                   href={item.href}
-                  className="block px-3 py-2 text-gray-600 hover:text-pink-600 transition-colors duration-300"
+                  className="block px-3 py-2 text-gray-600 hover:text-pink-400 transition-colors duration-300"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.label}
                 </a>
               ))}
               <div className="px-3 py-2">
-                <Button className="w-full bg-pink-600 hover:bg-pink-700 text-white">
+                <Button className="w-full bg-pink-400 hover:bg-pink-500 text-white rounded-full">
                   Resume
                 </Button>
               </div>
