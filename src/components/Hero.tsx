@@ -3,13 +3,23 @@ import { Github, Linkedin, Mail, Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Hero = () => {
+  const handleResumeDownload = () => {
+    // Create a link element to trigger download
+    const link = document.createElement('a');
+    link.href = '/lovable-uploads/b4ceb2fd-3892-441e-acae-a7e093a518ec.png'; // You can replace this with your actual resume PDF
+    link.download = 'Aditya_Sri_Inukonda_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-pink-100 via-rose-50 to-pink-200 px-6">
+    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-pink-50 via-rose-25 to-pink-100 px-6">
       <div className="max-w-4xl mx-auto text-center">
         <div className="animate-fade-in">
           <img
-            src="/lovable-uploads/cbe67b38-e099-4d92-ba73-355746fc8f70.png"
-            alt="Profile"
+            src="/lovable-uploads/b4ceb2fd-3892-441e-acae-a7e093a518ec.png"
+            alt="Aditya Sri Inukonda Profile"
             className="w-32 h-32 rounded-full mx-auto mb-8 border-4 border-pink-200 shadow-lg object-cover"
           />
           <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-4">
@@ -29,7 +39,11 @@ const Hero = () => {
               <Mail className="mr-2 h-5 w-5" />
               Contact Me
             </Button>
-            <Button variant="outline" className="px-8 py-3 rounded-full transition-all duration-300 hover:scale-105 border-pink-400 text-pink-400 hover:bg-pink-400 hover:text-white shadow-lg">
+            <Button 
+              variant="outline" 
+              className="px-8 py-3 rounded-full transition-all duration-300 hover:scale-105 border-pink-400 text-pink-400 hover:bg-pink-400 hover:text-white shadow-lg"
+              onClick={handleResumeDownload}
+            >
               <Download className="mr-2 h-5 w-5" />
               Download Resume
             </Button>
