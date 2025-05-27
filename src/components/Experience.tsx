@@ -5,51 +5,38 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 const Experience = () => {
   const experiences = [
     {
-      company: "Personal Startup",
-      position: "Founder/Software Developer",
-      duration: "Jan 2025 - Present",
-      location: "Aldie, VA",
-      description: [
-        "Developing a food delivery platform tailored for niche Indian restaurants to reduce reliance on third-party services",
-        "Integrated a cost-effective delivery system by partnering with local drivers and implementing an optimized route-planning algorithm",
-        "Conducting market research and customer validation by interviewing restaurant owners to understand pain points",
-        "Building a full-stack web and mobile app using React Native, Node.js, and PostgreSQL"
-      ],
-      technologies: ["React Native", "Node.js", "PostgreSQL", "Route Optimization"]
-    },
-    {
-      company: "Citi Bank",
-      position: "Software Engineer Intern",
-      duration: "Summer 2024",
-      location: "Remote",
-      description: [
-        "Engineered a real-time stock monitoring system using JavaFX, Gradle, and Yahoo API to store 3,600+ Dow Jones prices per hour, displaying live updates every 5 seconds with a line graph (17.2k updates/day)",
-        "Improved Citi's stock analysis capability by creating UML and data flow diagrams, researching machine learning models for credit risk assessment, and building a Java-based real-time risk visualization tool"
-      ],
-      technologies: ["Java", "JavaFX", "Gradle", "Yahoo API", "UML", "Machine Learning"]
-    },
-    {
-      company: "Wells Fargo",
-      position: "Software Engineer Intern",
-      duration: "April 2024 - May 2024",
-      location: "Remote",
-      description: [
-        "Drafted a detailed and accurate visual representation of the data as an entity relationship diagram (ERD)",
-        "Used the IntelliJ developer application to implement the ERD structure efficiently and published it to GitHub",
-        "Understood and analyzed relevant technical requirements for building a system to manage customer portfolios"
-      ],
-      technologies: ["IntelliJ", "ERD Design", "GitHub", "System Architecture"]
-    },
-    {
-      company: "George Mason University - College of Engineering",
-      position: "Teaching Assistant",
-      duration: "Fall 2023 - Spring 2024",
+      company: "George Mason University",
+      position: "Undergraduate Teaching Assistant",
+      duration: "August 2024 - May 2025",
       location: "Fairfax, VA",
       description: [
-        "Led weekly lab sessions and provided support to help students debug and improve programming assignments",
-        "Instructed Java and Python to over 2,100 undergraduate students across 5 semesters, emphasizing code readability"
+        "Guided over 200 students in understanding key object-oriented programming concepts such as inheritance, polymorphism, and encapsulation, improving overall student success rates by 15% based on exam scores",
+        "Provided assistance during lab sessions for students to help enhance their understanding of the coursework",
+        "Collaborated with multiple Graduate Teaching Assistants to help create thoughtful review sessions and practice exercises that increased total class wide engagement by 20%, as measured by attendance and participation"
       ],
-      technologies: ["Java", "Python", "Teaching", "Debugging"]
+      technologies: ["Java", "Python", "Teaching", "OOP Concepts"]
+    },
+    {
+      company: "Citi",
+      position: "Software Engineering Intern",
+      duration: "April 2025 - May 2025",
+      location: "Remote",
+      description: [
+        "Built a real-time stock tracker in JavaFX with Gradle and YahooAPI, storing 3,600+ Dow Jones prices hourly",
+        "Designed a line graph which updates every 5 seconds (17.2k times daily) to display prices in a readable format"
+      ],
+      technologies: ["Java", "JavaFX", "Gradle", "Yahoo API", "Real-time Systems"]
+    },
+    {
+      company: "Jay Arts Collections",
+      position: "UI/UX Designer",
+      duration: "December 2024 - January 2025",
+      location: "Fairfax, VA",
+      description: [
+        "Worked with Jay Arts Collections to manage an extensive catalog of over 100+ products by creating and refining existing visual design features for products (buttons, layout, typography) for a more captivating user experience",
+        "Leveraged customer analytics to design promotional content, resulting in increased website interaction and sales"
+      ],
+      technologies: ["UI/UX Design", "Customer Analytics", "Visual Design", "Typography"]
     }
   ];
 
@@ -57,14 +44,27 @@ const Experience = () => {
     {
       degree: "Bachelor of Science in Computer Science",
       school: "George Mason University",
-      duration: "2020 - 2024",
+      duration: "2021 - May 2025",
       location: "Fairfax, VA",
       details: [
-        "GPA: 3.51/4.0",
-        "Relevant Coursework: Data Structures, Algorithms, Software Engineering, Database Systems, Machine Learning",
-        "Focus on full-stack development and software engineering principles",
+        "GPA: 3.56/4.0",
+        "Relevant Coursework: Artificial Intelligence, Software Engineering, Operating Systems, Data Structures and Algorithms, Database Systems, Machine Learning, Computer Networks, Secure Programming and Systems, Comparative Programming",
+        "Focus on AI/ML and full-stack development",
         "Active participant in computer science community and technical projects"
       ]
+    }
+  ];
+
+  const certifications = [
+    {
+      title: "AWS Certified Cloud Practitioner",
+      issuer: "Amazon Web Services",
+      description: "Foundational understanding of AWS Cloud concepts, services, and terminology"
+    },
+    {
+      title: "Stanford Machine Learning Specialization",
+      issuer: "Stanford University",
+      description: "Comprehensive training in machine learning algorithms and applications"
     }
   ];
 
@@ -74,7 +74,7 @@ const Experience = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Experience & Education</h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            My professional journey from internships at major financial institutions to founding my own startup.
+            My professional journey from teaching assistant to software engineering intern, combined with comprehensive education and certifications.
           </p>
         </div>
 
@@ -83,7 +83,7 @@ const Experience = () => {
           <h3 className="text-2xl font-semibold text-gray-900 mb-8">Professional Experience</h3>
           <div className="space-y-6">
             {experiences.map((exp, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
+              <Card key={index} className="hover:shadow-lg transition-shadow duration-300 border-blue-200">
                 <CardHeader>
                   <div className="flex flex-col md:flex-row md:items-start md:justify-between">
                     <div>
@@ -128,11 +128,11 @@ const Experience = () => {
         </div>
 
         {/* Education Section */}
-        <div>
+        <div className="mb-16">
           <h3 className="text-2xl font-semibold text-gray-900 mb-8">Education</h3>
           <div className="space-y-6">
             {education.map((edu, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
+              <Card key={index} className="hover:shadow-lg transition-shadow duration-300 border-blue-200">
                 <CardHeader>
                   <div className="flex flex-col md:flex-row md:items-start md:justify-between">
                     <div>
@@ -160,6 +160,24 @@ const Experience = () => {
                       </li>
                     ))}
                   </ul>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+
+        {/* Certifications Section */}
+        <div>
+          <h3 className="text-2xl font-semibold text-gray-900 mb-8">Certifications</h3>
+          <div className="grid md:grid-cols-2 gap-6">
+            {certifications.map((cert, index) => (
+              <Card key={index} className="hover:shadow-lg transition-shadow duration-300 border-blue-200">
+                <CardHeader>
+                  <CardTitle className="text-lg text-gray-900">{cert.title}</CardTitle>
+                  <p className="text-blue-600 font-semibold">{cert.issuer}</p>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600">{cert.description}</p>
                 </CardContent>
               </Card>
             ))}
