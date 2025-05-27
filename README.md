@@ -1,6 +1,6 @@
-# Welcome to your Lovable project
+# Personal Portfolio
 
-Personal Portfolio
+
 
 ## What technologies are used for this project?
 
